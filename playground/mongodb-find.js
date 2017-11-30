@@ -17,9 +17,6 @@ console.log('unable to fetch todos',err)
     });
 
     db.collection('Users').find().toArray().then((doc) =>{
-        if(!Users){
-            console.log('no usersss founddddddd');
-        }
         console.log('users====');
         console.log(doc);
     }, (err) => {
